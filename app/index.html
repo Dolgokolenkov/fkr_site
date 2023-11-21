@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Фонд капитального ремонта</title>
 </head>
 <body>
@@ -15,21 +15,77 @@
         <div class="container">
             <div class="header__inner">
                 <div class="header__info">
-                    <div class="header__info__logo">
+                    <div class="header__info__items">
+                        <div class="header__info__item header__logo">
                             <a href="" class="header__info__logo__link">
-                                <img src="./images/logo.svg" alt="Логотип">
+                                <img class="logo" src="./images/logo.svg" alt="Логотип">
                             </a>
                             <p class="header__info__logo__text">
                                 Некоммерческая организация«Фонд капитального ремонта многоквартирных домов Тюменской области»
                             </p>
-                    </div>
-                    <div class="header__info__item">
-
+                        </div>
+                        <div class="header__info__item">
+                            <div class="header__info__contacts">
+                                <div class="header__info__contacts__item">
+                                    <img src="./images/icons/location.svg" alt="">
+                                    <p class="header__info__contact__text">
+                                        625048, Тюменская область,
+                                        г. Тюмень, ул. Новгородская, дом 10
+                                    </p>
+                                </div>
+                                <div class="header__info__contacts__item">
+                                    <img src="./images/icons/location.svg" alt="">
+                                    <p class="header__info__contact__text header__info__contact__mail">
+                                        nofkrto@yandex.ru
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__info__item">
+                            <p class="header__info__phone footer__phone">
+                                +7 (3452) 21-38-69
+                            </p>
+                            <div class="header__info__phone__additional">
+                                <img class="header__img__mini" src="./images/icons/location.svg" alt="#">
+                                <p class=" footer__contact__text">
+                                    доп. 102, 120, 121
+                                </p>
+                            </div>
+                        </div>
+                        <form class="search-form">
+                        
+                            <input class="input-with-image search-form__header" type="text" class="search-input" placeholder="Поиск">
+                        </form>
                     </div>
                 </div>
                 <nav class="header__menu">
                     <ul class="header__menu__list">
-                        
+                        <li class="header__menu__list__item">
+                            <a href="#" class="header__menu__list__link">
+                                Главная
+                            </a>
+                            <a href="#" class="header__menu__list__link">
+                                Главная
+                            </a>
+                            <a href="#" class="header__menu__list__link">
+                                Главная
+                            </a>
+                            <a href="#" class="header__menu__list__link">
+                                Главная
+                            </a>
+                            <a href="#" class="header__menu__list__link">
+                                Главная
+                            </a>
+                            <a href="#" class="header__menu__list__link">
+                                Главная
+                            </a>
+                            <a href="#" class="header__menu__list__link">
+                                Главная
+                            </a>
+                            <a href="#" class="header__menu__list__link">
+                                Главная
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -297,8 +353,14 @@
                             Мы вам перезвоним, либо <br> ответим на электронную почту
                         </span>
                     </div>
-                    <div class="question__form">
-
+                    <div>
+                        <form class="question__form" action="/submit-form" method="POST">
+                            <input class="question__form__input" type="text" id="name" name="name" required placeholder="Ваше имя">
+                            <input class="question__form__input" type="text" id="name" name="name" required placeholder="Номер телефона">
+                            <input class="question__form__input" type="email" id="email" name="email" required placeholder="Электронная почта">
+                            <input class="question__form__input" type="tel" id="phone" name="phone" required placeholder="Ваш запрос">                          
+                            <button class="question__form__submit" type="submit">Отправить</button>
+                          </form>
                     </div>
                 </div>
             </div>
@@ -317,7 +379,132 @@
                     <a href="" class="footer__inner__ask__link">
                         задать вопрос
                     </a>
-                    
+                    <form class="search-form">
+                        
+                        <input class="search-form__input input-with-image" type="text" class="search-input" placeholder="Поиск">
+                    </form>
+                </div>
+                <div class="footer__menu">
+                    <div class="footer__menu__items">
+                        <div class="footer__menu__item">
+                            <h6 class="footer__menu__item__title">
+                                Главная
+                            </h6>
+                            <ul class="footer__menu__item__links">
+                                <li class="footer__menu__item__link">
+                                    <a href="#">
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__menu__item">
+                            <h6 class="footer__menu__item__title">
+                                собственникам
+                            </h6>
+                            <ul class="footer__menu__item__links">
+                                <li>
+                                    <a class="footer__menu__item__link" href="#">
+                                        Информация для собственников 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer__menu__item__link" href="#">
+                                        Информация для собственников 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer__menu__item__link" href="#">
+                                        Информация для собственников 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer__menu__item__link" href="#">
+                                        Информация для собственников 
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__menu__item">
+                            <h6 class="footer__menu__item__title">
+                                Отчеты
+                            </h6>
+                            <ul class="footer__menu__item__links">
+                                <li>
+                                    <a class="footer__menu__item__link" href="#">
+                                        Информация для собственников 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer__menu__item__link" href="#">
+                                        Информация для собственников 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer__menu__item__link" href="#">
+                                        Информация для собственников 
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__menu__item">
+                            <h6 class="footer__menu__item__title">
+                                Контроль
+                            </h6>
+                            <ul class="footer__menu__item__links">
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__contacts">
+                    <p class="footer__phone">
+                        +7 (3452) 21-38-69
+                    </p>
+                    <div class="footer__contacts">
+                        <div class="footer__contact">
+                            <img src="./images/icons/footer/phone.svg" alt="" class="footer__contact__img">
+                            <p class="footer__contact__text">
+                                доп. 102, 120, 121
+                            </p> 
+                        </div>
+                        <div class="footer__contact">
+                            <img src="./images/icons/footer/phone.svg" alt="" class="footer__contact__img">
+                            <p class="footer__contact__text">
+                                625048, Тюменская область, <br>
+                            г. Тюмень, ул. Новгородская, дом 10
+                            </p> 
+                        </div>
+                        <div class="footer__contact">
+                            <img src="./images/icons/footer/phone.svg" alt="" class="footer__contact__img">
+                            <p class="footer__contact__text">
+                                nofkrto@yandex.ru
+                            </p> 
+                        
+                        </div>
+                    </div>
+                    <div class="footer__links">
+                        <a href="#" class="footer__link">
+                            Политика конфиденциальности
+                        </a>
+                        <a href="#" class="footer__link">
+                            Политика конфиденциальности
+                        </a>
+                        <a href="#" class="footer__link">
+                            Политика конфиденциальности
+                        </a>
+                    </div>
+                    <div class="footer__media">
+                        <a href="#" class="footer__media__link">
+                            <img src="./images/icons/sochial/vk.svg" alt="">
+                        </a>
+                        <a href="#" class="footer__media__link">
+                            <img src="./images/icons/sochial/vk.svg" alt="">
+                        </a>
+                        <a href="#" class="footer__media__link">
+                            <img src="./images/icons/sochial/vk.svg" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
