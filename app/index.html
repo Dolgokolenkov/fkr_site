@@ -53,8 +53,10 @@
                             </div>
                         </div>
                         <form class="search-form">
-                        
-                            <input class="input-with-image search-form__header" type="text" class="search-input" placeholder="Поиск">
+                            <label class="loop" for="myInput">
+                                <img src="./images/bigloop.svg" alt="Описание картинки">
+                            </label>
+                            <input id="myInput" class="input-with-image search-form__header" type="text" class="search-input" placeholder="Поиск">
                         </form>
                     </div>
                 </div>
@@ -95,13 +97,17 @@
         <section class="main__section">
             <div class="container">
                 <div class="main__section__inner">
-                    <h2 class="title">
-                        некоммерческая организация «фонд Капитального ремонта <br> многоквартирых домов 
-в Тюменской области»
-                    </h2>
-                    <a href="" class="main__section__link">
-                        связаться с нами
-                    </a>
+                    <div class="slider">
+                        <div class="slider__item">
+                            <h2 class="title">
+                                некоммерческая организация «фонд Капитального ремонта <br> многоквартирых домов 
+                                в Тюменской области»
+                            </h2>
+                            <a href="" class="main__section__link">
+                                связаться с нами
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -314,7 +320,7 @@
                             <img src="./images/slider/right.svg" alt="">
                         </div>
                     </div>
-                    <div class="work__inner__items">
+                    <div class="work__inner__items slider">
                         <div class="work__inner__item">
                             <div class="work__inner__item__top">
                                 <h5 class="title">
@@ -339,6 +345,10 @@
                             </div>
                         </div>
                     </div>
+                    <div class="slider__dots">
+                        <div class="slider__dot slider__dot--current"></div>
+                        <div class="slider__dot"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -358,9 +368,14 @@
                             <input class="question__form__input" type="text" id="name" name="name" required placeholder="Ваше имя">
                             <input class="question__form__input" type="text" id="name" name="name" required placeholder="Номер телефона">
                             <input class="question__form__input" type="email" id="email" name="email" required placeholder="Электронная почта">
-                            <input class="question__form__input" type="tel" id="phone" name="phone" required placeholder="Ваш запрос">                          
-                            <button class="question__form__submit" type="submit">Отправить</button>
-                          </form>
+                            <input class="question__form__input" type="tel" id="phone" name="phone" required placeholder="Ваш запрос">                     
+                        </form>
+                        <div class="question__bottom">
+                            <button class="question__form__submit" type="submit">Отправить</button>   
+                            <p class="question__descr">
+                                Нажимая “Отправить”, вы соглашаетесь <br> с политикой конфиденциальности
+                            </p>   
+                        </div>
                     </div>
                 </div>
             </div>
@@ -380,7 +395,9 @@
                         задать вопрос
                     </a>
                     <form class="search-form">
-                        
+                        <label class="small__loop" for="myInput">
+                            <img src="./images/loop.svg" alt="Описание картинки">
+                        </label>
                         <input class="search-form__input input-with-image" type="text" class="search-input" placeholder="Поиск">
                     </form>
                 </div>
@@ -504,6 +521,15 @@
                         <a href="#" class="footer__media__link">
                             <img src="./images/icons/sochial/vk.svg" alt="">
                         </a>
+                    </div>
+                    <div class="footer__logo">
+                        <img class="logo" src="./images/logo.svg" alt="Логотип">
+                        <p class="footer__logo__text">
+                            Некоммерческая организация«Фонд капитального ремонтамного квартирных домов Тюменской области»
+                        </p>
+                    </div>
+                    <div class="copyright">
+                        © 2023 НО "ФКР ТО"
                     </div>
                 </div>
             </div>
